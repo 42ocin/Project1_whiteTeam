@@ -41,14 +41,49 @@ mean_values_yes = [29.401592, 7.808242, 4.641764, 7.136156]
 mean_values_no = [28.224658, 2.956416, 3.828778, 7.093416]
 ```
 Age Group Comparison/Correlation
+```python
+heartdiseaseAgeCategory = yesheartDisease.groupby("HeartDisease")["AgeCategory"].value_counts()
+noheartdiseaseAgeCategory = noheartDisease.groupby("HeartDisease")["AgeCategory"].value_counts()
+```
 BMI Distrb/Corr
+```python
+bmiCorrelation = heartdiseaseDF['BMI'].corr(heartdiseaseDF['HeartDisease'])
+bmiCorrelation
+```
 Sleep Corr
-Mental Health Corr
-Smoking vs Drinking Corr
-Gender Comp/Corr
-Race Comp/Corr
-General Health Corr
+```python
+heartdiseaseDF['HeartDisease'] = heartdiseaseDF['HeartDisease'].replace({'Yes': 1, 'No': 0})
+heartdiseaseDF
 
+correlation=heartdiseaseDF['SleepTime'].corr(heartdiseaseDF['HeartDisease'])
+print(correlation)
+```
+```python
+agecorrelation = heartdiseaseDF['AgeCategory'].corr(heartdiseaseDF['HeartDisease'])
+agecorrelation
+```
+Mental Health Corr
+```python
+mentalhealthCorrelation = heartdiseaseDF['MentalHealth'].corr(heartdiseaseDF['HeartDisease'])
+mentalhealthCorrelation
+```
+Smoking vs Drinking Corr
+```python
+heartdiseaseSmoking = heartdiseaseDF.groupby('HeartDisease')['Smoking'].value_counts()
+heartdiseaseDrinking = heartdiseaseDF.groupby('HeartDisease')['AlcoholDrinking'].value_counts()
+```
+Gender Comp/Corr
+```python
+genderedheartDisease = yesheartDisease.groupby('HeartDisease')['Sex'].value_counts()
+genderednoheartDisease = noheartDisease.groupby('HeartDisease')['Sex'].value_counts()
+allgenderData = heartdiseaseDF.groupby('Sex').size()
+```
+Race Corr
+```python
+raceheartDisease = yesheartDisease.groupby('HeartDisease')['Race'].value_counts()
+racenoheartDisease = noheartDisease.groupby('HeartDisease')['Race'].value_counts()
+allraceData = heartdiseaseDF.groupby('Race').size()
+```
 ### Features
 ## Bar Graph
 ![AgeCatHeartDiseaseVSNoBar](https://github.com/42ocin/Project1_whiteTeam/assets/164439696/97c60a1f-55fa-483e-acff-776797efb3fa)
