@@ -50,18 +50,18 @@ Race Comp/Corr
 General Health Corr
 
 ### Features
-# Bar Graph
+## Bar Graph
 ![AgeCatHeartDiseaseVSNoBar](https://github.com/42ocin/Project1_whiteTeam/assets/164439696/97c60a1f-55fa-483e-acff-776797efb3fa)
 
-# Scatter Plot
+## Scatter Plot
 ![AgeWHeartDiseaseScatter](https://github.com/42ocin/Project1_whiteTeam/assets/164439696/b16b641b-48d9-41aa-b5c6-4e676ac932e4)
-# Pie Chart
+## Pie Chart
 ![GenHealthPie](https://github.com/42ocin/Project1_whiteTeam/assets/164439696/ce6c7c37-d87e-4ef6-b8f2-32203ff2d6cf)
 
-# Whisker Plot
+## Whisker Plot
 ![BMIwhisker](https://github.com/42ocin/Project1_whiteTeam/assets/164439696/3a817a95-ae6c-4124-8ea4-ec1330173f62)
 
-# Donut Chart
+## Donut Chart
 ![RaceDonuts](https://github.com/42ocin/Project1_whiteTeam/assets/164439696/e1b00025-a226-4343-b46d-c1be31881f60)
 
 ### Documentation
